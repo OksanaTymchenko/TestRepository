@@ -20,11 +20,12 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
       - name: Lint Filenames
         uses: batista/lint-filenames@v1
         with:
           path: './css'
           pattern: '.*\\.css'
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
+      
