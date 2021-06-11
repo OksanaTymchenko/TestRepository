@@ -25,3 +25,6 @@ jobs:
         with:
           path: './css'
           pattern: '.*\\.css'
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
