@@ -29,5 +29,5 @@ jobs:
         uses: batista/lint-filenames@v1
         with:
           path: './css'
-          pattern: '\\.css$'
+          pattern: '.*\\.css$'
       
