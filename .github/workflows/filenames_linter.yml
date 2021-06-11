@@ -22,10 +22,10 @@ jobs:
     steps:
       - name: List files in the repository
         run: |
-          ls ${{ github.workspace }}
+          ls "${{ github.workspace }}"
       - name: Lint Filenames
         uses: batista/lint-filenames@v1
         with:
           path: './css'
-          pattern: '.*\\.css'
+          pattern: '\\.css$'
       
